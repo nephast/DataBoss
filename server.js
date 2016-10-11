@@ -9,5 +9,5 @@ app.get('/', function(req, res) {
 });
 
 app.listen(3000, function() {
-  console.log("Databoss running on port 3000");
+  console.log("DataBoss running on port 3000");
 });
