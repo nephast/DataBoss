@@ -1,76 +1,90 @@
-{"native_database_types":
-
-}
- = {
-        "primary_key": "serial primary key",
-        "string":      { name: "character varying" },
-        "text":        { name: "text" },
-        "integer":     { name: "integer" },
-        "float":       { name: "float" },
-        "decimal":     { name: "decimal" },
-        "datetime":    { name: "timestamp" },
-        "time":        { name: "time" },
-        "date":        { name: "date" },
-        "daterange":   { name: "daterange" },
-        "numrange":    { name: "numrange" },
-        "tsrange":     { name: "tsrange" },
-        "tstzrange":   { name: "tstzrange" },
-        "int4range":   { name: "int4range" },
-        "int8range":   { name: "int8range" },
-        "binary":      { name: "bytea" },
-        "boolean":     { name: "boolean" },
-        "xml":         { name: "xml" },
-        "tsvector":    { name: "tsvector" },
-        "hstore":      { name: "hstore" },
-        "inet":        { name: "inet" },
-        "cidr":        { name: "cidr" },
-        "macaddr":     { name: "macaddr" },
-        "uuid":        { name: "uuid" },
-        "json":        { name: "json" },
-        "jsonb":       { name: "jsonb" },
-        "ltree":       { name: "ltree" },
-        "citext":      { name: "citext" },
-        "point":       { name: "point" },
-        "line":        { name: "line" },
-        "lseg":        { name: "lseg" },
-        "box":         { name: "box" },
-        "path":        { name: "path" },
-        "polygon":     { name: "polygon" },
-        "circle":      { name: "circle" },
-        "bit":         { name: "bit" },
-        "bit_varying": { name: "bit varying" },
-        "money":       { name: "money" },
-      }
-
-
-ASSOCIATIONS_TYPES = {
-  belongs_to,
-  has_one,
-  has_many,
-  has_many :through,
-  has_one :through,
-  has_and_belongs_to_many
-}
-
 {
-    "glossary": {
-        "title": "example glossary",
-		"GlossDiv": {
-            "title": "S",
-			"GlossList": {
-                "GlossEntry": {
-                    "ID": "SGML",
-					"SortAs": "SGML",
-					"GlossTerm": "Standard Generalized Markup Language",
-					"Acronym": "SGML",
-					"Abbrev": "ISO 8879:1986",
-					"GlossDef": {
-                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
-						"GlossSeeAlso": ["GML", "XML"]
-                    },
-					"GlossSee": "markup"
-                }
-            }
-        }
+  "language": {
+    "ruby": "Ruby"
+  },
+
+  "framework": {
+    "rails": "Rails"
+  },
+
+  "ORM": {
+    "activeRecord": "Active Record"
+  },
+
+  "Database": {
+    "psql": "Postgresql"
+  },
+
+  "native_database_types": {
+        "primaryKey": "primary_key",
+        "string": "string",
+        "text": "text",
+        "integer": "integer",
+        "float":  "float",
+        "decimal":  "decimal",
+        "datetime":  "datetime",
+        "time":  "time",
+        "date":  "date",
+        "daterange": "daterange",
+        "numrange":   "numrange",
+        "tsrange":    "tsrange",
+        "tstzrange": "tstzrange",
+        "int4range": "int4range",
+        "int8range": "int8range",
+        "binary":  "binary",
+        "boolean":  "boolean",
+        "xml":  "xml",
+        "tsvector": "tsvector",
+        "hstore": "hstore",
+        "inet": "inet",
+        "cidr":  "cidr",
+        "macaddr": "macaddr",
+        "uuid": "uuid",
+        "json": "json",
+        "jsonb": "jsonb",
+        "ltree": "ltree",
+        "citext":"citext",
+        "point": "point",
+        "line": "line",
+        "lseg": "lseg",
+        "box": "box",
+        "path":"path",
+        "polygon": "polygon",
+        "circle": "circle",
+        "bit": "bit",
+        "bitVarying":"bit_varying",
+        "money":"money"
+      },
+
+
+"associations_types": {
+  "belongsTo": "belongs_to",
+  "hasOne": "has_one",
+  "hasMany": "has_many",
+  "hasManyThrough": "has_many :through",
+  "hasOneThrough": "has_one :through",
+  "hasAndBelongsToMany": "has_and_belongs_to_many"
+},
+
+"columns": {
+  "id": ""
+},
+
+  "validations": {
+    "acceptance": "acceptance",
+    "validatesAssociated": "validates_associated",
+    "confirmation": "confirmation",
+    "exclusion": "exclusion",
+    "format": "format",
+    "inclusion": "inclusion",
+    "length": "length",
+    "numericality": "numericality",
+    "presence": "presence",
+    "absence": "absence",
+    "uniqueness": "uniqueness",
+    "validatesWith": "validates_with",
+    "validatesEach": "validates_each",
+    "allowNil": "allow_nil",
+    "allowBlank": "allow_blank"
     }
-}
+  }
