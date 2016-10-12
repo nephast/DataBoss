@@ -1,0 +1,22 @@
+{
+  "name": "databoss",
+  "version": "1.0.0",
+  "description": "A tool to create databases like a boss.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrmurtz/DataBoss.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrmurtz/DataBoss/issues"
+  },
+  "homepage": "https://github.com/mrmurtz/DataBoss#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

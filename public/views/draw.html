@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <input type="button" name="name" value="Create model" id="create-diagram">
+  <input type="button" name="name" value="Create association" id="create-line">
+  <form id="model-label">
+    <input type="text" name="label-name" placeholder="Model name">
+    <input type="button" name="label-btn" value="Enter">
+  </form>
+  <canvas id="myCanvas"></canvas>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="../js/paper-full.js"></script>
+  <script type="text/paperscript" src="../src/diagram.js" canvas="myCanvas"></script>
+</body>
+</html>
